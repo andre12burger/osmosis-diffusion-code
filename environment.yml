@@ -1,16 +1,18 @@
 name: osmosis
 channels:
   - defaults
+  - pytorch
+  - nvidia
 dependencies:
   - python=3.8
-  - torchvision==0.14.1
-  - pytorch-cuda=11.7
-  - pytorch==1.13.1
-  - torchaudio==0.13.1
+  - pytorch=2.1.2
+  - torchvision=0.16.2
+  - torchaudio=2.1.2
+  - pytorch-cuda=12.1
   - matplotlib
   - tqdm
   - opencv
   - scikit-image
   - natsort
   - pandas
-prefix: D:\miniconda3\envs\osmosis
+# prefix: D:\miniconda3\envs\osmosis

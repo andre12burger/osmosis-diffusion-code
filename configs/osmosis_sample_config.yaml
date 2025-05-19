@@ -1,5 +1,5 @@
 # saving directory
-save_dir: ./results
+save_dir: ./results # escolher um disco com espaço suficiente para salvar o resultado -----------------------------------------------------------------------------
 
 degamma_input: False # use it for not linear haze image
 manual_seed: 0
@@ -63,7 +63,7 @@ unet_model:
   use_new_attention_order: False
 
   # pretrained model
-  model_path: ./models/osmosis_outdoor.pt
+  model_path: ./models/osmosis_outdoor.pt # baixar a calibração do RGBD -----------------------------------------------------------------
   pretrain_model: osmosis
 
 # diffusion configurations
@@ -102,10 +102,10 @@ aux_loss:
     val_loss: 20
 
 data:
-  batch_size: 1
+  batch_size: 1 # talvez aumentar bach size
 
   name: osmosis
-  root: ./data/underwater/low_res
+  root: ./data/underwater/low_res # mudar pasta para a pasta do dataset ---------------------------------------------------
 
   stop_after: -1
   ground_truth: False
